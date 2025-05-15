@@ -239,7 +239,7 @@ body::after {
   </footer>
 
   <script>
-    Kakao.init('37ea916b7f1ab457b58119c60ec405a');
+    Kakao.init('37ea916b7f1ab457b58119c60ec4052a');
     const totalImages = 9;
     const imageOrder = Array.from({ length: totalImages }, (_, i) => i + 1);
     let currentIndex = 0, currentVisible = 0;
@@ -269,13 +269,13 @@ body::after {
 
     function shareToKakao() {
       const num = imageOrder[currentIndex];
-      const shareUrl = `https://bluenew.life/share/${num}.html`;
-      const imageUrl = `https://bluenew.life/card/images/${num}.jpg`;
+      const shareUrl = `https://bluenew.life/thisdaegu/share/${num}.html`;
+      const imageUrl = `https://bluenew.life/thisdaegu/images/${num}.jpg`;
       Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
-          title: '이재명의 말을 들어보세요!',
-          description: '#이재명 말모이 모음 페이지',
+          title: '이재명의 비전!',
+          description: '이런 대구를 만들겠습니다',
           imageUrl,
           link: { mobileWebUrl: shareUrl, webUrl: shareUrl }
         }
